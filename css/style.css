@@ -1,0 +1,255 @@
+.tweet {
+	/*border: 1px solid red;*/
+	margin-bottom: 5px;
+	background-color: #FFF;
+	padding: 1em;
+	border-bottom: 1px solid #E6ECf0;
+	font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+	border-radius: 7px;
+}
+
+html {
+  background-color: #E6ECF0;
+}
+
+body {
+  margin: 0;
+}
+
+body > header {
+  background-color: #FFF;
+}
+
+body > header div {
+  width: 40em;
+  margin: 0 auto;
+}
+
+#tweets {
+  width: 40em;
+  margin: 1em auto;
+}
+
+#tweets > header {
+  display: none;
+}
+
+.tweet header .realname{
+  font-weight: bold;
+}
+
+.tweet header a{
+  text-decoration: none;
+  color: #657786;
+}
+
+.tweet header .time:before {
+  content: '\00B7  ';
+}
+ 
+body > header {
+  border-bottom: 1px solid #dedede;
+}
+
+body > header h1 {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+body > header a {
+  color: #48AAE6;
+  text-decoration: none;
+}
+
+body > header h1 {
+  font-size: 2em;
+  font-family: 'Calistoga', cursive;
+}
+
+body > header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+body > header div {
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+body > header a {
+  padding: 0em;
+}
+
+#register {
+  width: 20em;
+  margin: 0 auto;
+}
+
+#register h2 {
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+#register form {
+  margin: 0;
+}
+
+#register input {
+  display: block;
+  border: 0;
+  margin: 1em;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#register input[type=submit] {
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 2em;
+  margin: 1em 1em;
+}
+
+#register input[type=file] {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/***********ERROR MESSAGES**********/
+	
+#messages {
+  width: 40em;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+#messages div {
+  padding: 1em;  
+  margin-top: 1em;
+  border-radius: 2em;
+}
+
+#messages .error {
+  background-color: #F99;
+  color: #333;
+}
+
+#messages .success {
+  background-color: #9F9;
+  color: #333;
+}
+
+#messages .close {
+  float: right;
+  text-decoration: none;
+  color: #333;
+}
+
+body > header h1 {
+  margin: 0 1em 0 0;
+  align-self: center;
+}
+
+body > header a {
+  align-self: center;
+  display: block;
+  margin-right: 0.5em;
+  flex-grow: 1;
+  text-align: right;
+}
+
+body > header input{
+  margin: 2em 0;
+  border: 1px solid #828282;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+body > header input[type="text"]{
+  width: 10em;
+}
+
+body > header input[type="password"]{
+  width: 10em;
+}
+
+body > header input[type="submit"]{
+  background-color: #1DA1F2;
+  color: white;
+  border-color: #1DA1F2;
+  box-sizing: content-box;
+}
+
+body > header .username {
+  margin: 2em 2em 2em 0.5em;
+}
+
+/*****************TWEET FORM*************/
+#tweet_form {
+  background-color: #E8F4FB;
+  padding: 5px;
+  margin-bottom: 16px;
+  border-radius: 7px;
+}
+
+#tweet_form form {
+  width: 100%;
+  display: flex;
+}
+
+#tweet_form textarea{
+  border: none;
+  flex-grow: 1;
+  margin: 1em;
+  padding: 1em;
+}
+
+#tweet_form input {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+/*********Freet reloader************/
+.tweet .id{
+  display: none;
+}
+
+#new_tweets {
+  display: none;
+  background-color: #B8ECEF;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  margin-bottom: 5px;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  border-radius: 7px;
+}
+
+#new_tweets a{
+  color: blue;
+  text-decoration: none;
+}
+
+.field_error {
+  color: red;
+  font-size: 80%;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.tweet {
+  min-height: 64px;
+}
+
+.tweet img {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin-right: 15px;
+  margin-top: 3px;
+  border-radius: 5px;
+}
