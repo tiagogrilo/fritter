@@ -1,5 +1,4 @@
 .tweet {
-	/*border: 1px solid red;*/
 	margin-bottom: 5px;
 	background-color: #FFF;
 	padding: 1em;
@@ -21,12 +20,12 @@ body > header {
 }
 
 body > header div {
-  width: 40em;
+  width: 75em;
   margin: 0 auto;
 }
 
 #tweets {
-  width: 40em;
+  width: 50em;
   margin: 1em auto;
 }
 
@@ -119,7 +118,7 @@ body > header a {
 /***********ERROR MESSAGES**********/
 	
 #messages {
-  width: 40em;
+  width: 75em;
   margin: 0 auto;
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
@@ -252,4 +251,32 @@ body > header .username {
   margin-right: 15px;
   margin-top: 3px;
   border-radius: 5px;
+}
+
+.photo-upload {
+  margin-left: 15px;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 75em;
+  margin: 0 auto;
+}
+
+.sidebar-profile {
+  width: 25%;
+  height: 30vh;
+  border: 3px;
+  padding: 15px;
+  float: right;
+	background-color: #FFF;
+	border-bottom: 1px solid #E6ECf0;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  border-radius: 7px;
+  margin-top: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }

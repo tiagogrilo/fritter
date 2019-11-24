@@ -21,8 +21,10 @@
            name="password" 
            value="" 
            placeholder="Password">
-    <label>Photo: <input type="file" name="photo">
-    </label>
+    <div  class="photo-upload">
+      <label>Photo: <input type="file" name="photo">
+      </label>
+    </div>
     <input type="submit" value="Register">
   </form>
 
