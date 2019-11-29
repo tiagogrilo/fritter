@@ -17,8 +17,6 @@
       {/if}
 
       <section id="new_tweets"></section>
-      
-        
           {foreach $tweets as $tweet}
             <article class="tweet">
               <img src="{$BASE_URL}{$tweet.photo}">

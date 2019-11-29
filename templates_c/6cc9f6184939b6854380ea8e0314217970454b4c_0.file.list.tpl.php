@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-24 17:59:59
+/* Smarty version 3.1.33, created on 2019-11-29 11:06:14
   from '/usr/users2/mieec2013/up201305267/public_html/fritter/templates/tweets/list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ddab70fadf085_29403876',
+  'unifunc' => 'content_5de0ed9601e644_80180861',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6cc9f6184939b6854380ea8e0314217970454b4c' => 
     array (
       0 => '/usr/users2/mieec2013/up201305267/public_html/fritter/templates/tweets/list.tpl',
-      1 => 1574614766,
+      1 => 1575021823,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ddab70fadf085_29403876 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de0ed9601e644_80180861 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 	<div class="wrapper">
@@ -46,8 +46,6 @@ actions/tweets/tweet.php" method="post">
       <?php }?>
 
       <section id="new_tweets"></section>
-      
-        
           <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['tweets']->value, 'tweet');
 if ($_from !== null) {

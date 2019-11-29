@@ -36,27 +36,27 @@ function checkForNewTweets() {
 }
 
 function initTweetReloader() {
-    $('#new_tweets').on('click', 'a', function() {
-      let last_id = $('article.tweet:first .id').text();
-      $.getJSON(BASE_URL + "api/tweets/get_after.php", {id: last_id}, function(data) {
-        $.each(data, function(i, tweet) {
-          $('#tweets .tweet:first').before('<article class="tweet">' +
-			  //correct line below to display all user pics
-			  '<img src="' + BASE_URL + 'images/users/john.png">' +
-              '<header>' +
-                '<span class="id">' + tweet.id + '</span>' +
-                '<span class="realname">' + tweet.realname + '</span>' +
-                '<a href="{$BASE_URL}pages/tweets/list_user.php?username=' + tweet.username +
-                 '" class="username">@' + tweet.username +
-                '</a>' +
-                '<span class="time">' + tweet.time + '</span>' +
-              '</header>' +
-              '<p>' + tweet.text + '</p>' +
-            '</article>');
-          $('#new_tweets').fadeOut();
-        });
+  $('#new_tweets').on('click', 'a', function() {
+    let last_id = $('article.tweet:first .id').text();
+    $.getJSON(BASE_URL + "api/tweets/get_after.php", {id: last_id}, function(data) {
+      $.each(data, function(i, tweet) {
+        $('#tweets .tweet:first').before('<article class="tweet">' +
+      //correct line below to display all user pics
+      '<img src="' + BASE_URL + 'images/users/' + tweet.username + '.png">' +
+            '<header>' +
+              '<span class="id">' + tweet.id + '</span>' +
+              '<span class="realname">' + tweet.realname + '</span>' +
+              '<a href="{$BASE_URL}pages/tweets/list_user.php?username=' + tweet.username +
+                '" class="username">@' + tweet.username +
+              '</a>' +
+              '<span class="time">' + tweet.time + '</span>' +
+            '</header>' +
+            '<p>' + tweet.text + '</p>' +
+          '</article>');
+        $('#new_tweets').fadeOut();
       });
     });
+  });
 }
    
    
