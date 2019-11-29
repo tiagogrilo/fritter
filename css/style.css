@@ -26,7 +26,7 @@ body > header div {
 
 #tweets {
   width: 50em;
-  margin: 1em auto;
+  margin: 1em 0 1em auto;
 }
 
 #tweets > header {
@@ -181,7 +181,7 @@ body > header input[type="submit"]{
 }
 
 body > header .username {
-  margin: 2em 2em 2em 0.5em;
+  margin: 2em 0 2em 0.5em;
 }
 
 /*****************TWEET FORM*************/
@@ -266,7 +266,7 @@ body > header .username {
 }
 
 .sidebar-profile {
-  width: 25%;
+  width: 27%;
   height: 30vh;
   border: 3px;
   padding: 15px;
@@ -278,5 +278,5 @@ body > header .username {
   margin-top: 1em;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 15px;
 }

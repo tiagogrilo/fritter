@@ -27,7 +27,6 @@ function initTweetChecker() {
 
 function checkForNewTweets() {
     let last_id = $('article.tweet:first .id').text();
-  
     $.getJSON(BASE_URL + "api/tweets/count_after.php", {id: last_id}, function(data) {
         if (data > 0) {
             $('#new_tweets').html('New freets (' + data + '). <a href="#">Reload</a>?');
@@ -42,6 +41,8 @@ function initTweetReloader() {
       $.getJSON(BASE_URL + "api/tweets/get_after.php", {id: last_id}, function(data) {
         $.each(data, function(i, tweet) {
           $('#tweets .tweet:first').before('<article class="tweet">' +
+			  //correct line below to display all user pics
+			  '<img src="' + BASE_URL + 'images/users/john.png">' +
               '<header>' +
                 '<span class="id">' + tweet.id + '</span>' +
                 '<span class="realname">' + tweet.realname + '</span>' +

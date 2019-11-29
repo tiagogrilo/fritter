@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-24 02:11:16
+/* Smarty version 3.1.33, created on 2019-11-24 17:59:59
   from '/usr/users2/mieec2013/up201305267/public_html/fritter/templates/tweets/list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd9d8b4b21c02_28256529',
+  'unifunc' => 'content_5ddab70fadf085_29403876',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6cc9f6184939b6854380ea8e0314217970454b4c' => 
     array (
       0 => '/usr/users2/mieec2013/up201305267/public_html/fritter/templates/tweets/list.tpl',
-      1 => 1574557875,
+      1 => 1574614766,
       2 => 'file',
     ),
   ),
@@ -23,10 +23,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5dd9d8b4b21c02_28256529 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ddab70fadf085_29403876 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:common/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<div class="wrapper">
+	<div class="wrapper">
     <?php $_smarty_tpl->_subTemplateRender('file:users/sidebar_profile.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <section id="tweets">
@@ -47,7 +47,7 @@ actions/tweets/tweet.php" method="post">
 
       <section id="new_tweets"></section>
       
-        <div class="container">
+        
           <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['tweets']->value, 'tweet');
 if ($_from !== null) {
@@ -58,6 +58,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['tweet']->value) {
 echo $_smarty_tpl->tpl_vars['tweet']->value['photo'];?>
 ">
               <header>
+				<span class="id"><?php echo $_smarty_tpl->tpl_vars['tweet']->value['id'];?>
+</span>
                 <span class="realname"><?php echo $_smarty_tpl->tpl_vars['tweet']->value['realname'];?>
 </span>
                 <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
@@ -77,7 +79,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           <p class="pagination">
             <a class="pagination__next" href="page2.html">Next page</a>
           </p>
-        </div>
+        
       </div> 
     </section>
 <?php $_smarty_tpl->_subTemplateRender('file:common/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
